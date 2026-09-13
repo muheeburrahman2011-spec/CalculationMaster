@@ -1,0 +1,61 @@
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b1e2b"/>
+      <stop offset="100%" stop-color="#10121a"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f5f4f1"/>
+      <stop offset="100%" stop-color="#dcdad4"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7ea88a"/>
+      <stop offset="100%" stop-color="#5f8f70"/>
+    </linearGradient>
+    <linearGradient id="orb" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6c8dfa"/>
+      <stop offset="100%" stop-color="#3f5fd8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- app icon background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- calculator body -->
+  <g transform="translate(96,86)">
+    <rect x="0" y="0" width="240" height="326" rx="28" fill="url(#body)"/>
+    <!-- screen -->
+    <rect x="22" y="26" width="196" height="70" rx="10" fill="url(#screen)"/>
+    <text x="204" y="76" font-family="Courier New, monospace" font-size="30" font-weight="700" fill="#1c2a1c" text-anchor="end">729</text>
+
+    <!-- button grid -->
+    <g fill="#2c2c2c">
+      <rect x="22" y="112" width="42" height="34" rx="8"/>
+      <rect x="76" y="112" width="42" height="34" rx="8"/>
+      <rect x="130" y="112" width="42" height="34" rx="8"/>
+      <rect x="184" y="112" width="34" height="34" rx="8" fill="#3f5fd8"/>
+
+      <rect x="22" y="156" width="42" height="34" rx="8"/>
+      <rect x="76" y="156" width="42" height="34" rx="8"/>
+      <rect x="130" y="156" width="42" height="34" rx="8"/>
+      <rect x="184" y="156" width="34" height="34" rx="8" fill="#3f5fd8"/>
+
+      <rect x="22" y="200" width="42" height="34" rx="8"/>
+      <rect x="76" y="200" width="42" height="34" rx="8"/>
+      <rect x="130" y="200" width="42" height="34" rx="8"/>
+      <rect x="184" y="200" width="34" height="34" rx="8" fill="#3f5fd8"/>
+
+      <rect x="22" y="244" width="96" height="34" rx="8"/>
+      <rect x="130" y="244" width="42" height="34" rx="8"/>
+      <rect x="184" y="244" width="34" height="34" rx="8" fill="#3f5fd8"/>
+    </g>
+  </g>
+
+  <!-- voice / live orb badge, bottom-right -->
+  <circle cx="378" cy="366" r="70" fill="url(#orb)" stroke="#10121a" stroke-width="10"/>
+  <g stroke="#ffffff" stroke-width="9" stroke-linecap="round">
+    <line x1="356" y1="344" x2="356" y2="388"/>
+    <line x1="378" y1="328" x2="378" y2="404"/>
+    <line x1="400" y1="350" x2="400" y2="382"/>
+  </g>
+</svg>
